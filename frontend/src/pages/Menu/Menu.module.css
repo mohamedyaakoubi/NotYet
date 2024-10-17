@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #2e2e5f;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .mainContent {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .rightSection {
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .createPost {
+    display: flex;
+    flex-direction: column;
+    border: #333 solid 1px;
+  }
+  
+  .createPost input, .createPost textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .createOptions button {
+    margin-right: 10px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .youtubePlayer {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .rightSidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  

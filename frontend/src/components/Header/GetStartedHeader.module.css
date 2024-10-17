@@ -1,0 +1,37 @@
+header {
+    padding: 0.625rem 0;
+    background-color: #3949ab; 
+    align-items: center;
+    
+}
+
+.container {
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.container-items {
+    
+    display: flex;
+    justify-content: center ; 
+    
+} 
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    margin: 0;
+   
+    display: inline-block;
+    
+}
+
+img {
+    object-fit: contain;
+    height: 70px; 
+    display: inline-block;
+
+} 
