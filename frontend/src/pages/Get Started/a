@@ -1,0 +1,123 @@
+<div className="cont">
+                <div className="container-items">
+                    <div className="custom-container">
+                        <button className="view-menu">
+                            <img src={"arrow_left.svg"} alt="back" />
+                        </button>
+                        <div className="description">
+                            <p class="explore">
+                                Explore PathSensei
+                            </p>
+                            <p className="custom-text">
+                                Engage with our AI chatbots to receive expert guidance tailored to your needs in Sales, Negotiation, Marketing, and more.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Explore AI Chatbots
+                            </p>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            .cont {
+                display: flex;           
+                flex-direction: column;  
+                align-items: flex-start;
+              }
+              
+              .custom-container {
+                max-width: 1272px;              /* max-w-[1272px] */
+                margin-left: auto;              /* mx-auto */
+                margin-right: auto;             /* mx-auto */
+                display: flex;                  /* flex */
+                width: 100%;                    /* w-full */
+                flex-direction: column;         /* flex-col */
+                align-items: center;            /* items-center */
+                gap: 20px;                      /* gap-20 */
+              }
+              
+              /* Media queries */
+              @media (min-width: 768px) {
+                .custom-container {
+                    gap: 60px;                  /* md:gap-[60px] */
+                    padding-left: 20px;         /* md:px-5 */
+                    padding-right: 20px;        /* md:px-5 */
+                }
+              }
+              
+              @media (max-width: 640px) {
+                .custom-container {
+                    gap: 10px;                  /* sm:gap-10 */
+                }
+              }
+              
+              .view-menu {
+                border-radius: 20px; 
+                width: 42px; 
+                align-self: flex-start; 
+                border: 1px solid; 
+                padding-left: 2.5px; 
+                padding-right: 2.5px; 
+                display: flex; 
+                flex-direction: row; 
+                align-items: center; 
+                justify-content: center; 
+                text-align: center; 
+                cursor: pointer; 
+                white-space: nowrap; 
+                height: 42px; 
+                border-color: #FFFFFF; 
+                border-style: solid; 
+              }
+              
+              .description {
+                  width: 48%;                     
+                  display: flex;                   
+                  flex-direction: column;         
+                  align-items: center;             
+                  gap: 8px; 
+              }
+              
+              @media (min-width: 768px) {
+                .description {
+                    width: 100%;                 /* md:w-full */
+                }
+              }
+              
+              .explore {
+                width: 48%;                     /* w-[48%] */
+                display: flex;   
+                font-size: 40px;               /* flex */
+                flex-direction: column;         /* flex-col */
+                align-items: center;            /* items-center */
+                gap: 2px;                       /* gap-2 */
+              }
+              
+              /* Media query for medium screens */
+              @media (min-width: 768px) {
+                .explore {
+                    width: 100%;                /* md:w-full */
+                }
+              }
+              
+              .custom-text {
+                font-size: 24px;                  /* text-[24px] */
+                align-self: stretch;              /* self-stretch */
+                text-align: center;               /* text-center */
+                font-weight: normal;              /* font-normal */
+                text-transform: capitalize;        /* capitalize */
+                line-height: 2.25;                /* leading-9 (9 * 0.25rem = 2.25) */
+                color: #8c8c8c;                   /* text-foundation-white-white_800 (replace with the appropriate color) */
+              }
+              
+              /* Media query for medium screens */
+              @media (min-width: 768px) {
+                .custom-text {
+                    font-size: 22px;              /* md:text-[22px] */
+                }
+              }

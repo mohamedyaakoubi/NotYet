@@ -1,0 +1,29 @@
+.OldChats {
+    background: linear-gradient(149.88deg, #3949AB 37.22%, #251043 72.54%, #38126D 97.89%, #261045 109.94%, rgba(25, 6, 52, 0.8) 124.05%);
+    border-top: 2.67px solid #4F228D;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.txt {
+    color: white;
+    font-size: 20px;
+}
+
+.chat {
+    height: 70%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+    
+}
+
+.chat:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,74 @@
+.CurrentChat{
+    height: 100%;
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.ButtonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20%;
+    
+}
+
+.preChat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    height: 70%;
+    position: relative;
+}
+
+.preChatContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.bottomsection{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+
+}
+
+.bottomsection svg {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bottomsection .messagebar{
+    border: 1px solid purple;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.bottomsection .messagebar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
