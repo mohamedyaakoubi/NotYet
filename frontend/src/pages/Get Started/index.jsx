@@ -1,33 +1,18 @@
 import React from "react";
 import GetStartedHeader from "../../components/Header/GetStartedHeader";
-
+import "./getStarted.css";
+import OldChats from "../../components/OldChats/OldChats";
+import CurrentChat from "../../components/CurrentChat/CurrentChat";
 const GetStarted = () => {
     return (
-        <div>
+        <div className="mainPage">
             <GetStartedHeader />
-            <div className="cont">
-                <div className="container-items">
-                    <div className="custom-container">
-                        <button className="view-menu">
-                            <img src={"arrow_left.svg"} alt="back" />
-                        </button>
-                        <div className="description">
-                            <p class="explore">
-                                Explore PathSensei
-                            </p>
-                            <p className="custom-text">
-                                Engage with our AI chatbots to receive expert guidance tailored to your needs in Sales, Negotiation, Marketing, and more.
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                Explore AI Chatbots
-                            </p>
-                            <div>
-                                
-                            </div>
-                        </div>
-                    </div>
+            <div className="main">
+                <div className="leftSide">
+                    <OldChats />
+                </div>
+                <div className="rightSide">
+                    <CurrentChat />
                 </div>
             </div>
         </div>
