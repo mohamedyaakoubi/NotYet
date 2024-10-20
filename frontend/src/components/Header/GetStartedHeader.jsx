@@ -1,11 +1,11 @@
 import React from 'react';
-import './GetStartedHeader.module.css';
+import styles from './GetStartedHeader.module.css';
 const GetStartedHeader = () => {
     return (
-        <header className="styles.GetStartedHeader">
-            <div className="container">
-                <div className="container-items">
-                    <img src={"astronaut.svg"} className="App-logo" alt="logo" />
+        <header className={styles.GetStartedHeader}>
+            <div className={styles.container}>
+                <div className={styles.containerItems}>
+                    <img src={"astronaut.svg"} className={styles.AppLogo} alt="logo" />
                     <h3>PathSensei</h3>
                 </div>
             </div>

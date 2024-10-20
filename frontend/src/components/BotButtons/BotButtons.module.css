@@ -1,0 +1,39 @@
+.ButtonsDiv {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 5%;
+    
+}
+
+.ButtonsDiv button {
+    background: linear-gradient(149.88deg, #3949AB 37.22%, #251043 72.54%, #38126D 97.89%, #261045 109.94%, rgba(25, 6, 52, 0.8) 124.05%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-top: 2.67px solid #4F228D;
+    width: 222px;
+
+}
+
+.ButtonsDiv button:hover {
+    filter: brightness(1.2);
+}
+
+.ButtonsDiv .active:hover {
+    filter: brightness(1);
+}
+
+/* Active button style */
+.ButtonsDiv .active {
+    background: #fff;
+    color: #452ca2;
+    border: 2px solid #fff;
+    font-weight: bold;
+    
+}

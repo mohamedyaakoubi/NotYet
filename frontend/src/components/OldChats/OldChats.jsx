@@ -22,7 +22,11 @@ const OldChats = () => {
     <div className={styles.OldChats}>
       
       <div className={styles.allChats}>
-        <button>back</button>
+      <div className={styles.backButton}>
+        <button className={styles.back}>
+            <img src="backbutton.svg" alt="back" />
+          </button>
+        </div>
         {chats.map(chat => (
             <div key={chat.id} className={styles.chat}>
                 

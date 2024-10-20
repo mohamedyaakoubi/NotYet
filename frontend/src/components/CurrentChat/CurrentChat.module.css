@@ -6,14 +6,7 @@
     
 }
 
-.ButtonsDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    gap: 20%;
-    
-}
+
 
 .preChat {
     display: flex;
@@ -39,29 +32,37 @@
     height: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
     z-index: 10;
+    
 
 }
 
 .bottomsection svg {
-    width: 25px;
-    height: 25px;
-    background-color: gray;
-    padding: 5px;
-    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
+.bottomsection svg:hover {
+    background-color: purple;
+    transition: 0.3s ease;
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+
 .bottomsection .messagebar{
-    border: 1px solid purple;
+    border: 1.5px solid #852FFF;
     align-items: center;
     display: flex;
-    padding: 15px;
-    border-radius: 10px;
+    padding-left: 10px;
+    border-radius: 30px;
     justify-content: space-between;
     width: 80%;
+    background: linear-gradient(90deg, #3949AB 0%, #171D45 100%);
 }
 
 .bottomsection .messagebar input {
@@ -71,4 +72,34 @@
     font-size: 20px;
     color: white;
     width: 100%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .CurrentChat {
+        padding: 0px 10px;
+    }
+
+    .ButtonsDiv {
+        gap: 2%;
+    }
+
+    .ButtonsDiv button {
+        padding: 10px 10px;
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .preChatContent {
+        width: 80%;
+    }
+
+    .bottomsection .messagebar {
+        padding: 10px;
+    }
+
+    .bottomsection .messagebar input {
+        font-size: 15px;
+        
+    }
 }

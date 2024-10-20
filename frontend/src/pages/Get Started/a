@@ -1,4 +1,4 @@
-<div className="cont">
+/* <div className="cont">
                 <div className="container-items">
                     <div className="custom-container">
                         <button className="view-menu">
@@ -31,28 +31,28 @@
               }
               
               .custom-container {
-                max-width: 1272px;              /* max-w-[1272px] */
-                margin-left: auto;              /* mx-auto */
-                margin-right: auto;             /* mx-auto */
-                display: flex;                  /* flex */
-                width: 100%;                    /* w-full */
-                flex-direction: column;         /* flex-col */
-                align-items: center;            /* items-center */
-                gap: 20px;                      /* gap-20 */
+                max-width: 1272px;              
+                margin-left: auto;             
+                margin-right: auto;             
+                display: flex;                 
+                width: 100%;                    
+                flex-direction: column;         
+                align-items: center;         
+                gap: 20px;                      
               }
               
-              /* Media queries */
+             
               @media (min-width: 768px) {
                 .custom-container {
-                    gap: 60px;                  /* md:gap-[60px] */
-                    padding-left: 20px;         /* md:px-5 */
-                    padding-right: 20px;        /* md:px-5 */
+                    gap: 60px;                  
+                    padding-left: 20px;        
+                    padding-right: 20px;        
                 }
               }
               
               @media (max-width: 640px) {
                 .custom-container {
-                    gap: 10px;                  /* sm:gap-10 */
+                    gap: 10px;                 
                 }
               }
               
@@ -85,39 +85,40 @@
               
               @media (min-width: 768px) {
                 .description {
-                    width: 100%;                 /* md:w-full */
+                    width: 100%;                
                 }
               }
               
               .explore {
-                width: 48%;                     /* w-[48%] */
+                width: 48%;                     
                 display: flex;   
-                font-size: 40px;               /* flex */
-                flex-direction: column;         /* flex-col */
-                align-items: center;            /* items-center */
-                gap: 2px;                       /* gap-2 */
+                font-size: 40px;               
+                flex-direction: column;         
+                align-items: center;            
+                gap: 2px;                       
               }
               
-              /* Media query for medium screens */
+              
               @media (min-width: 768px) {
                 .explore {
-                    width: 100%;                /* md:w-full */
+                    width: 100%;               
                 }
               }
               
               .custom-text {
-                font-size: 24px;                  /* text-[24px] */
-                align-self: stretch;              /* self-stretch */
-                text-align: center;               /* text-center */
-                font-weight: normal;              /* font-normal */
-                text-transform: capitalize;        /* capitalize */
-                line-height: 2.25;                /* leading-9 (9 * 0.25rem = 2.25) */
-                color: #8c8c8c;                   /* text-foundation-white-white_800 (replace with the appropriate color) */
+                font-size: 24px;                 
+                align-self: stretch;              
+                text-align: center;              
+                font-weight: normal;              
+                text-transform: capitalize;      
+                line-height: 2.25;                
+                color: #8c8c8c;                 
               }
               
-              /* Media query for medium screens */
+             
               @media (min-width: 768px) {
                 .custom-text {
-                    font-size: 22px;              /* md:text-[22px] */
+                    font-size: 22px;             
                 }
               }
+   */
