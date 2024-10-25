@@ -1,4 +1,4 @@
-p {
+.BotDescription p {
     color: #8C8C8C;
     font-size: 20px;
     font-weight: 400;
@@ -7,7 +7,7 @@ p {
 
 }
 
-h3{
+.BotDescription h3{
     font-size: 28px;
     font-weight: 600;
     line-height: 42px;

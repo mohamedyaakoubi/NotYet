@@ -1,0 +1,43 @@
+.NotYetHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    gap: 100px;
+}
+
+.NotYetHeader h2
+{
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.41px;
+    text-align: left;
+}
+
+
+
+.NotYetHeader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.NotYetHeader li {
+    cursor: pointer;
+    color: #282828;
+
+    transition: color 0.3s;
+}
+

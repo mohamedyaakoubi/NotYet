@@ -12,7 +12,7 @@
   background-repeat: no-repeat; 
   background-attachment: fixed;
   color: white;
-  overflow: hidden;
+  
 }
   
   
@@ -20,7 +20,7 @@
   font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 85px);
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import GetStartedHeader from "../../components/Header/GetStartedHeader";
+import GetStartedHeader from "../../components/GetStartedHeader/GetStartedHeader";
 import "./getStarted.css";
 import OldChats from "../../components/OldChats/OldChats";
 import CurrentChat from "../../components/CurrentChat/CurrentChat";

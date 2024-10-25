@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styles from './CurrentChat.module.css'
-import bot from '../../assets/bot.png'
-import user from '../../assets/user.png'
+import botIcon from '../../assets/bot.png'
+import userIcon from '../../assets/user.png'
 import BotDescription from '../BotDescription/BotDescription'
 import BotButtons from '../BotButtons/BotButtons'
 const CurrentChat = () => {
@@ -20,8 +20,11 @@ const CurrentChat = () => {
     const sendMessage = async () => {
         if(message === '') return;
         console.log(message)
+        setAllMessages(prevMessages => [...prevMessages, { sender: 'user', text: message }]);
+        setTimeout(() => {
+            setAllMessages(prevMessages => [...prevMessages, { sender: 'bot', text: 'Bot is thinking...' }]);
+        }, 1000);
         setMessage('');
-        
     }
 
     const handleBotChange = (botType) => {
@@ -43,19 +46,17 @@ const CurrentChat = () => {
                         </div>
                     </div>
                 :
-                <div >
-                     {/* {allMessages.map((msg, index) => (
-                        <div key={index} className={styles.message}>  
-                            <img src={msg.role === 'user' ? user : bot} width={50} height={50} alt="" />
-                            <div className={styles.details}>
-                                <h2>{msg.role === 'user' ? 'You' : 'Bot'}</h2>
-                                <p>{msg.parts[0].text}</p>
-                            </div>
+                
+                <div className={styles.chatContainer}>
+                    {allMessages.map((msg, index) => (
+                        <div key={index} className={msg.sender === 'user' ? styles.userMessage : styles.botMessage}>
+                            <img src={msg.sender === 'user' ? userIcon : botIcon} alt="icon" />
+                            <p>{msg.text}</p>
                         </div>
-                     ))} */}
+                    ))}
                 </div>
+                
             }
-
 
             <div className={styles.bottomsection}>
                 <div className={styles.messagebar}>
@@ -77,8 +78,6 @@ const CurrentChat = () => {
                         </defs>
                     </svg>
 
-                            
-                    
                 </div>
 
             </div>

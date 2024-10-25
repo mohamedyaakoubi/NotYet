@@ -1,12 +1,11 @@
 .CurrentChat{
     height: 100%;
     padding: 0px 20px;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 .preChat {
     display: flex;
@@ -36,8 +35,8 @@
     align-items: center;
     gap: 20px;
     z-index: 10;
-    
-
+    padding: 10px 20px;
+    position-anchor: bottom;
 }
 
 .bottomsection svg {
@@ -62,6 +61,7 @@
     border-radius: 30px;
     justify-content: space-between;
     width: 80%;
+    position: relative;
     background: linear-gradient(90deg, #3949AB 0%, #171D45 100%);
 }
 
@@ -73,6 +73,7 @@
     color: white;
     width: 100%;
     padding-left: 20px;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -102,4 +103,78 @@
         font-size: 15px;
         
     }
+    .chatContainer {
+        padding: 10px;
+    }
+    
+    .userMessage, .botMessage {
+        max-width: 90%; 
+    }
 }
+
+
+.chatContainer {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 10px;
+    
+  }
+  
+.userMessage, .botMessage {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    font-size: 20px;
+
+}
+  
+.userMessage {
+    align-self: flex-end; 
+    background-color: #852fff; 
+    color: white;
+    border-radius: 15px 15px 0px 15px;
+}
+  
+.botMessage {
+    align-self: flex-start; 
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 15px 15px 15px 0px;
+}
+  
+.userMessage img, .botMessage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  
+ 
+.chatContainer::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.chatContainer::-webkit-scrollbar-track {
+background: #333;
+}
+
+.chatContainer::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 10px;
+}
+  
+.chatContainer::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
