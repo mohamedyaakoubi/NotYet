@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GetStarted from './pages/Get Started/index';
-import Resume from './pages/Resume/index';
+import Resume from './pages/resume/index';
 //import Forum from './pages/Forum';
 
 
