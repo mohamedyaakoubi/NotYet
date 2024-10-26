@@ -4,6 +4,8 @@ import botIcon from '../../assets/bot.png'
 import userIcon from '../../assets/user.png'
 import BotDescription from '../BotDescription/BotDescription'
 import BotButtons from '../BotButtons/BotButtons'
+
+
 const CurrentChat = () => {
     const [message, setMessage] = useState('');
     const [allMessages, setAllMessages] = useState([]);
@@ -19,11 +21,52 @@ const CurrentChat = () => {
 
     const sendMessage = async () => {
         if(message === '') return;
-        console.log(message)
         setAllMessages(prevMessages => [...prevMessages, { sender: 'user', text: message }]);
-        setTimeout(() => {
-            setAllMessages(prevMessages => [...prevMessages, { sender: 'bot', text: 'Bot is thinking...' }]);
-        }, 1000);
+        
+        setAllMessages(prevMessages => [...prevMessages, { sender: 'bot', text: 'Bot is thinking...' }]);
+        const requestBody = JSON.stringify({ input: message });
+        const requestHeaders = new Headers({ "Content-Type": "application/json" });
+        const apiKey = "Wef5hz2SY8qmQHjk6KzfXiO5of17nrwx";
+        console.log(apiKey);
+        if (!apiKey) {
+            console.error("A key should be provided to invoke the endpoint");
+            return;
+        }
+
+        requestHeaders.append("Authorization", "Bearer " + apiKey);
+        requestHeaders.append("azureml-model-deployment", "notyet-project-gpt4o-tuni-zccjo");
+        
+        const url ="https://notyet-project-gpt4o-tuni-zccjo.swedencentral.inference.ml.azure.com/score";
+
+        try {
+            const response = await fetch(url, {
+                method: "POST",
+                body: requestBody,
+                headers: requestHeaders,
+                
+                
+            });
+            console.log(response);
+            if (response.ok) {
+                const jsonResponse = await response.json();
+                const botReply = jsonResponse.response; 
+                setAllMessages(prevMessages => [
+                    ...prevMessages.slice(0, -1),
+                    { sender: 'bot', text: botReply }
+                ]);
+            } else {
+                console.debug(...response.headers);
+                console.debug(response.body);
+                throw new Error("Request failed with status code " + response.status);
+            }
+        } catch (error) {
+            console.error(error);
+            setAllMessages(prevMessages => [
+                ...prevMessages.slice(0, -1),
+                { sender: 'bot', text: 'Sorry, something went wrong. Please try again.' }
+            ]);
+        }
+
         setMessage('');
     }
 
