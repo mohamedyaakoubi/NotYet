@@ -37,9 +37,37 @@
     width: 100%;
     border-collapse: collapse;
   }
-  
+  .posts-table td {
+    text-align: center;
+  }
   .posts-table th, .posts-table td {
     padding: 10px;
     border-bottom: 1px solid #eee;
   }
+
+  .posts {
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .postsData {
+    display: inline-block;
+    flex-direction: column;
+    justify-content:left ;
+    width: fit-content;
+    text-align: left;
+  }
   
+  .sort-buttons button {
+    background-color: white;
+    color: #3949AB ;
+    padding: 10px;
+    border: 1px solid #3949AB;
+    border-radius: 400px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .sort-buttons {
+    display: inline-block;
+  }

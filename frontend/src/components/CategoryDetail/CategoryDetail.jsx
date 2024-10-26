@@ -9,7 +9,6 @@ const categoryPosts = {
     { id: 3, title: "...............", author: "Nour", date: "06 Sep 2023 09:02", answers: 0, accesses: 31, likes: 9, dislikes: 3 },
   ],
   2: [
-    // Add posts for other categories
   ],
 };
 
@@ -24,8 +23,9 @@ const CategoryDetail = () => {
       <div className="category-header">
         <input type="text" placeholder="Seek" className="category-search" />
         <div className="sort-buttons">
-          <button>Sort by: Date</button>
-          <button>Sort by: Reviews</button>
+          <label>Sort by:</label>
+          <button>Date</button>
+          <button>Reviews</button>
         </div>
         <button className="create-post">Create post</button>
       </div>
@@ -33,7 +33,7 @@ const CategoryDetail = () => {
       <table className="posts-table">
         <thead>
           <tr>
-            <th>Posts</th>
+            <th className='posts'>Posts</th>
             <th>Answer</th>
             <th>Accesses</th>
             <th>Evaluation</th>
@@ -42,7 +42,7 @@ const CategoryDetail = () => {
         <tbody>
           {posts.map(post => (
             <tr key={post.id}>
-              <td>{post.title}<br />from {post.author} <span>{post.date}</span></td>
+              <td className='postsData'>{post.title}<br />from {post.author} <span>{post.date}</span></td>
               <td>{post.answers}</td>
               <td>{post.accesses}</td>
               <td>

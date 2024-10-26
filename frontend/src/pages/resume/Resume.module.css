@@ -1,0 +1,176 @@
+.upload {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #B0BAC366;
+    width: 55%;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-radius: 30px;
+    position: relative;
+    
+    
+}
+
+.upload h3 {
+    color: black;
+    padding:  0;
+}
+
+.uploadButton {
+    width: fit-content;
+    background-color:#3949AB;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 20px;
+    
+}
+
+.uploadButton input[type="file"] {
+    display: none;
+}
+
+.upload p{
+    color: #717B9E;
+}
+
+
+.personalInfo  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 40px;
+    margin-top: 15px;
+    padding: 20px;
+    position: relative;
+    width: 54%;
+}
+
+.personalInfo button {
+    background: none;
+    border: none;
+    color: #717B9E;
+    font-size: 20px;
+
+}
+
+.separator {
+    border: 1px solid #D9D9D9;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.videoResume {
+    position:absolute;
+    right: 30px;
+    top: 70px;
+    
+}
+
+.resumeForm {
+    margin-bottom: 50px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.labInp {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+    
+}
+
+.labInp input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    height: 40px;
+}
+
+
+.first div input {
+    width: 520px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    
+}
+
+.resumeForm input {
+    background: #B0BAC366;
+    color: black;
+
+}
+
+.resumeForm label {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+.loner {
+    display: flex;
+    justify-content: center;
+    
+}
+.loner .labInp {
+    width: 80% ;
+}
+
+.labInp textarea {
+    height: 250px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #B0BAC366;
+    border-radius: 20px;
+    resize: none;
+}
+
+.addSection button {
+    background-color: #3949AB;
+    width: 20%;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.containsDate {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.submitButton input[type="submit"] {
+    background-color: #3949AB;
+    width: 20%;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
