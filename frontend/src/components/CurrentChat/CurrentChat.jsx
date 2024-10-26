@@ -21,7 +21,7 @@ const CurrentChat = () => {
         if(message === '') return;
         console.log(message)
         setAllMessages(prevMessages => [...prevMessages, { sender: 'user', text: message }]);
-        setTimeout(() => {
+        setTimeout(() => { // Bot response 
             setAllMessages(prevMessages => [...prevMessages, { sender: 'bot', text: 'Bot is thinking...' }]);
         }, 1000);
         setMessage('');
