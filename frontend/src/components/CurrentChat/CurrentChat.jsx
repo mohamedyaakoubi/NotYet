@@ -77,14 +77,9 @@ const CurrentChat = () => {
                         </clipPath>
                         </defs>
                     </svg>
-
                 </div>
-
             </div>
-        </div>
-            
-            
-        
+        </div>  
     )
 }
 

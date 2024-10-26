@@ -1,0 +1,119 @@
+.forumList {
+    padding: 20px;
+  }
+  
+  .forumSearch {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .forumTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .forumTable th, .forumTable td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    
+  }
+  
+  .forumTable th {
+    text-align: left;
+  }
+  
+  .forumTable a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .forumTable a:hover {
+    text-decoration: underline;
+  }
+  
+
+.back {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    background: none;
+    border: none;
+
+}
+
+.back img {
+    width: 42px;
+    height: 42px;
+    filter: brightness(0.1);
+}
+
+.back img:hover{
+    filter: brightness(0.1);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.backButton {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.backButton {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.hb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.hb h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #384953;
+    ;
+}
+
+.forumTable th{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3949AB;
+
+}
+
+.createPost {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color: #3949AB;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.forumSearch {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 20%;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 5px;
+    background-color: #ECF0F4;
+    
+
+}
