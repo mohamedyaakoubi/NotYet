@@ -3,20 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@azure/ai-form-recognizer": "^5.0.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cors": "^2.8.5",
-    "crypto-browserify": "^3.12.1",
-    "dotenv": "^16.4.5",
-    "os-browserify": "^0.3.0",
-    "path-browserify": "^1.0.1",
+    "driver.js": "^1.3.1",
+    "firebase": "^11.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "proxy": "https://notyet-project-gpt4o-tuni-zccjo.swedencentral.inference.ml.azure.com",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
