@@ -101,6 +101,7 @@ const Resume = () => {
             setSubmissionMessage("Error submitting document, please try again."); // Set an error message
         }
         
+        
     };
 
     return (
